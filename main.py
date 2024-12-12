@@ -83,7 +83,3 @@ async def webhook(request: Request):
         if text == "/start auth":
             await bot.send_message(chat_id=chat_id, text="Вы успешно авторизованы!")
     return {"status": "ok"}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
